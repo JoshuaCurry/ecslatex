@@ -7,7 +7,7 @@ This document uses IEEE Referencing (through `IEEETran.bst`) - This is available
 
 This is based on the original `ecsgdp.cls`, by [Steve R Gunn](https://www.ecs.soton.ac.uk/people/srg), and which can be found [here](http://users.ecs.soton.ac.uk/srg/softwaretools/document/)
 
-## Compilation
+## Usage
 
 To compile this, simply open up `master.tex` with your favourite LaTeX compiler (I use `pdflatex`) and compile.
 
