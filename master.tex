@@ -1,0 +1,47 @@
+%% ----------------------------------------------------------------
+%% The Dankest GDP.tex
+%% ---------------------------------------------------------------- 
+\documentclass{src/ecsgdp}
+\graphicspath{{./images/}}
+\hypersetup{colorlinks=true}
+\input{src/definitions}
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter
+\title      {Project Title}
+\authors	{
+{Author 1},
+{Author 2},\\
+{Author 3},
+{Author 4}
+}
+\addresses  {\groupname\\\deptname\\\univname}
+\date       {February 1, 2018}
+\subject    {}
+\keywords   {}
+\supervisor {Professor Person A}
+\examiner   {Dr Person B}
+\degree     {Master of Engineering}
+\maketitle
+\begin{abstract}
+\include{0_Abstract}
+\end{abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+% Optional extra pages
+%\listofsymbols{ll}{$w$ & The weight vector}
+%\acknowledgements{Here are some acknowledgements}
+%\dedicatory{To \dots}
+\mainmatter
+%% ----------------------------------------------------------------
+\include{1_Introduction}
+\include{99_Conclusions}
+\appendix
+\include{100_Appendix}
+\backmatter
+\bibliographystyle{src/IEEEtran}
+\bibliography{master}
+\end{document}
+%% ----------------------------------------------------------------
