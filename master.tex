@@ -8,7 +8,7 @@
 %% ----------------------------------------------------------------
 \begin{document}
 \frontmatter
-\title      {Project Title}
+\title      {INSERT YOUR PROJECT TITLE HERE}
 \authors	{
 {Author 1},
 {Author 2},\\
@@ -22,29 +22,43 @@
 \supervisor {Professor Person A}
 \examiner   {Dr Person B}
 \degree     {Master of Engineering}
+\reporttype {group design project report} % Change here if you're doing a 3YP report
 \maketitle
+
 \begin{abstract}
 \include{0_Abstract}
 \end{abstract}
+
 \tableofcontents
 \listoffigures
 \listoftables
 \lstlistoflistings
+
+%% ----------------------------------------------------------------
 % Optional extra pages
 %\listofsymbols{ll}{$w$ & The weight vector}
 %\acknowledgements{Here are some acknowledgements}
 %\dedicatory{To \dots}
-\mainmatter
 %% ----------------------------------------------------------------
+
+% \mainmatter means that we've gone from i, ii, iii, iv, v etc. introduction 
+% numbering to 1,2,3,4,5 chapter numbering
+
+\mainmatter
+
 \include{00_Introduction}
 \include{1_Chapter1}
 \include{2_Chapter2}
 \include{3_Chapter3}
 \include{9_Conclusions}
-\appendix
-\include{99_Appendix}
+
+% \backmatter means that we've gone from 1,2,3,4,5 chapter numbering 
+% to unnumbered bibliography/appendices. 
 \backmatter
+
 \bibliographystyle{src/IEEEtran}
 \bibliography{master}
+\appendix
+\include{99_Appendix}
+
 \end{document}
-%% ----------------------------------------------------------------

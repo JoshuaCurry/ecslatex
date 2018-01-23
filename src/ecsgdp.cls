@@ -120,6 +120,7 @@
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
 \newcommand*{\examiner}[1]{\def\examname{#1}}
 \newcommand*{\degree}[1]{\def\degreename{#1}}
+\newcommand*{\reporttype}[1]{\def\reporttype{#1}}
 \newcommand*{\authors}[1]{\def\authornames{#1}}
 \newcommand*{\addresses}[1]{\def\addressnames{#1}}
 \newcommand*{\university}[1]{\def\univname{#1}}
@@ -182,7 +183,7 @@
       {\large\textbf{\UNIVNAME}\par}
       {\large \facname \par}
       \vfill
-      {\large A group design project report submitted for}
+      {\large A \reporttype{} submitted for}
       {\large the award of \par \degreename \par}
       \vfill
       {\normalsize Supervisor: \supname \par}
@@ -230,7 +231,7 @@
     \bigskip
     {\normalsize \FACNAME \par}
     \bigskip
-    {\normalsize \underline{A group design project report submitted for the award of \degreename}\par}
+    {\normalsize \underline{A \reporttype{} submitted for the award of \degreename}\par}
     \bigskip
     {\normalsize\bf \@title \par}
     \medskip
