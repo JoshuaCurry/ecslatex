@@ -11,4 +11,8 @@ This is based on the original `ecsgdp.cls`, by [Steve R Gunn](https://www.ecs.so
 
 To compile this, simply open up `master.tex` with your favourite LaTeX compiler (I use `pdflatex`) and compile.
 
-You can edit the master BibTeX Bibliography file at `master.bib`. Remember to compile using BibTeX then a couple of times with LaTeX for these citations to show up in your document.
+You can edit the master BibTeX Bibliography file at `master.bib`.
+
+Remember, as with all LaTeX stuff, if you're using a Bibliography, compile using LaTeX, then BibTeX, then LaTeX then LaTeX again (see `Makefile`) so that your references are all inserted nicely.
+
+If you want to use the `Makefile`, simply `cd` into this repository directory and type `make`.
