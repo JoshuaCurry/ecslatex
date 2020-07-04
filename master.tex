@@ -1,6 +1,6 @@
 %% ----------------------------------------------------------------
 %% REPORT-NAME.tex
-%% ---------------------------------------------------------------- 
+%% ----------------------------------------------------------------
 \documentclass{src/ecsgdp}
 \graphicspath{{./images/}}
 \hypersetup{colorlinks=true}
@@ -26,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-\include{0_Abstract}
+\input{0_Abstract}
 \end{abstract}
 
 \tableofcontents
@@ -41,7 +41,7 @@
 %\dedicatory{To \dots}
 %% ----------------------------------------------------------------
 
-% \mainmatter means that we've gone from i, ii, iii, iv, v etc. introduction 
+% \mainmatter means that we've gone from i, ii, iii, iv, v etc. introduction
 % numbering to 1,2,3,4,5 chapter numbering
 
 \mainmatter
@@ -52,8 +52,8 @@
 \include{3_Chapter3}
 \include{9_Conclusions}
 
-% \backmatter means that we've gone from 1,2,3,4,5 chapter numbering 
-% to unnumbered bibliography/appendices. 
+% \backmatter means that we've gone from 1,2,3,4,5 chapter numbering
+% to unnumbered bibliography/appendices.
 \backmatter
 
 \bibliographystyle{src/IEEEtran}
@@ -62,3 +62,8 @@
 \include{99_Appendix}
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
